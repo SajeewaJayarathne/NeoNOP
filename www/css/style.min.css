@@ -2345,13 +2345,16 @@ p.probootstrap-content {
 }
 
 .frame .details h4 {
-    margin: 0;
+    margin-top: 0;
     color: #59ffb5;
     font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
 }
 
 .frame .details p {
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .frame .details p:last-child {

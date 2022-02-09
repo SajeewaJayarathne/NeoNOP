@@ -39,3 +39,9 @@ window.onclick = function(event) {
         modalContentAbout.style.display = "none";
     }
 }
+
+function clearForm () {
+    for(const form of document.getElementsByTagName('form')) {
+        form.reset();
+    }
+}
