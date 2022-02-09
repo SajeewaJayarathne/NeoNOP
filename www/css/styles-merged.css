@@ -17253,7 +17253,7 @@ section[data-section="menu"] {
     }
 }
 
-.probootstrap-section-bg.overlay:before {
+.probootstrap-section-bg .overlay:before {
     content: "";
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -17301,10 +17301,6 @@ section[data-section="menu"] {
     .probootstrap-footer .probootstrap-footer-widget {
         margin-bottom: 20px;
     }
-}
-
-.probootstrap-footer .probootstrap-footer-widget div.row div {
-    height: 30px;
 }
 
 .probootstrap-footer .probootstrap-footer-widget div.row div li {

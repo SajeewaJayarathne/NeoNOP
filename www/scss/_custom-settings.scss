@@ -12,6 +12,19 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../fonts/NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.eot');
+	src: url('../fonts/NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.woff2') format('woff2'),
+	url('../fonts/NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.woff') format('woff'),
+	url('../fonts/NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.ttf') format('truetype'),
+	url('../fonts/NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.svg#NotoSansKR-Medium-Alphabetic') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
 @mixin icomoon() {
 	
 	font-family: 'icomoon';
@@ -26,6 +39,22 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	
+}
+
+@mixin NotoSansKR() {
+
+	font-family: 'NotoSansKR';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
 }
 
 // Variables

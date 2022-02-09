@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.eot');
+    src: url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.eot?#iefix') format('embedded-opentype'),
+        url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.woff2') format('woff2'),
+        url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.woff') format('woff'),
+        url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.ttf') format('truetype'),
+        url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic.svg#NotoSansKR-Medium-Alphabetic') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR1';
+    src: url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic_1.eot');
+    src: url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic_1.eot?#iefix') format('embedded-opentype'),
+        url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic_1.woff2') format('woff2'),
+        url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic_1.woff') format('woff'),
+        url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic_1.ttf') format('truetype'),
+        url('../NotoSansKR-Medium/NotoSansKR-Medium-Alphabetic_1.svg#NotoSansKR-Medium-Alphabetic') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

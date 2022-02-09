@@ -35,77 +35,85 @@
         <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#" data-nav-section="welcome">회사 소개</a></li>
-                <li><a href="#" data-nav-section="businesses">솔루션</a></li>
-                <li><a href="#" data-nav-section="products">제품 & 서비스</a></li>
-                <li><a href="#" data-nav-section="ceo">CEO의 메시지</a></li>
+                <li><a href="#" data-nav-section="businesses">업무분야</a></li>
+                <li><a href="#" data-nav-section="products">포트폴리오</a></li>
                 <li><a href="#" data-nav-section="contact">연락</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<section id="home" class="flexslider">
-    <ul class="slides">
-        <li style="background-image: url(img/custom/bg/se_1.jpg)" class="overlay" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                            <h1 class="primary-heading">그 너머에</h1>
-                            <h3 class="secondary-heading">기술</h3>
-                            <img src="img/custom/web/logo_white.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li style="background-image: url(img/custom/bg/mobile_3.png)" class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                            <h1 class="primary-heading">당신의 일상</h1>
-                            <h3 class="secondary-heading">솔루션 제공자</h3>
-                            <img src="img/custom/web/logo_white.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section id="home" class="probootstrap-section-bg"
+         data-stellar-background-ratio="0.5" data-section="home">
 
-        </li>
-        <li style="background-image: url(img/custom/bg/iot_1.jpg)" class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                            <h1 class="primary-heading">중요한</h1>
-                            <h3 class="secondary-heading">기술</h3>
-                            <img src="img/custom/web/logo_white.png" alt="">
-                        </div>
-                    </div>
+    <div class="background-video">
+        <video id="background-video" autoplay loop muted>
+            <source src="img/custom/video/coding.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 probootstrap-animate">
+                <div class="probootstrap-heading main-heading">
+                    <img src="img/custom/web/logo_white.png" alt="">
+                    <h2>새로운 것이 시작되는
+                        <span class="green-fore-color">타이밍</span>
+                        <br>
+                        순간의 <span class="green-fore-color">멈춤</span>에서 세상을 바꾸는 모든 것이
+                        <span class="green-fore-color">탄생</span>한다</h2>
                 </div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </section>
 
 <section id="welcome" class="probootstrap-section probootstrap-bg-black" data-section="welcome">
-    <div class="container">
+    <div class="container tile-layout">
         <div class="row">
-            <div class="col-md-5 text-center probootstrap-animate">
-                <div class="probootstrap-heading dark">
-                    <h1 class="primary-heading">발견하다</h1>
-                    <h3 class="secondary-heading">우리의 이야기</h3>
-                    <span class="seperator">* * *</span>
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile" data-animate-effect="fadeIn">
+                    <h1 class="icon-coin-dollar"></h1>
+                    <h3 class="green-fore-color">개발 비용 걱정 NOP</h3>
+                    <p>업계최초 개발비용 분할 결제 서비스로 클라이언트 님의 부담을 덜어드립니다.</p>
                 </div>
-
-                <h4 class="probootstrap-content">"새로운 것이 시작되는 타이밍, 그 순간의 멈춤에서 세상을 바꾸는 모든 것이 탄생한다"</h4>
-
-                <button type="button" class="btn btn-primary mt20" onclick="readMoreAbout()">더 읽기 <i class="icon-arrow-long-right"></i></button>
             </div>
-            <div class="col-md-6 col-md-push-1 probootstrap-animate">
-                <p><img src="img/custom/web/green-dev-bg.jpg" alt="Free Bootstrap Template by uicookies.com"
-                        class="img-responsive"></p>
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile" data-animate-effect="fadeIn">
+                    <h1 class="icon-documents2 bolder"></h1>
+                    <h3 class="green-fore-color">개발 기획 걱정 NOP</h3>
+                    <p>클라이언트님의 Business를 파악하여 전문 기획자가 기획을 Design해드립니다.</p>
+                </div>
+            </div>
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile" data-animate-effect="fadeIn">
+                    <h1 class="icon-back-in-time"></h1>
+                    <h3 class="green-fore-color">개발 진행 과정 걱정 NOP</h3>
+                    <p>개발과정을 정기적으로 타임라인을 통해 보여드립니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile" data-animate-effect="fadeIn">
+                    <h1 class="icon-profile-male bolder"></h1>
+                    <h3 class="green-fore-color">개발 퀄리티 걱정 NOP</h3>
+                    <p>클라이언트님의 Business를 Global기업 출신의 전문 개발자가 개발해드립니다.</p>
+                </div>
+            </div>
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile" data-animate-effect="fadeIn">
+                    <h1 class="icon-happy"></h1>
+                    <h3 class="green-fore-color">고객 불만족 걱정 NOP</h3>
+                    <p>개발이 완료되면 끝이 아닙니다. 개발자-검사원-기획자 3중 전문가 검증 System을 통해 완성도를 높입니다.</p>
+                </div>
+            </div>
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile" data-animate-effect="fadeIn">
+                    <h1 class="icon-info2"></h1>
+                    <h3 class="green-fore-color">결과물의 소유권 걱정 NOP</h3>
+                    <p>클라이언트님의 아이디어와 개발 외주 결과물은 100% 클라이언트님의 것입니다.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -118,62 +126,216 @@
         <div class="row">
             <div class="col-md-12 text-center probootstrap-animate">
                 <div class="probootstrap-heading">
-                    <h2 class="primary-heading">발견하다</h2>
-                    <h3 class="secondary-heading">우리의 솔루션</h3>
+                    <h2 class="primary-heading">업무분야</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section class="probootstrap-section">
-    <div class="container">
+    <div class="container tile-layout">
         <div class="row">
-            <div class="probootstrap-cell-retro">
-                <div class="half">
-
-                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
-                        <div class="image" style="background-image: url(img/custom/bg/web_2.jpg);"></div>
-                        <div class="text text-center">
+            <div class="col-md-4 probootstrap-animate">
+                <div class="row">
+                    <div class="col-md-12 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-img" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/bg/web_3.jpg)">
                             <h3>웹 개발</h3>
                         </div>
                     </div>
-
-                    <div class="probootstrap-cell reverse probootstrap-animate" data-animate-effect="fadeIn">
-                        <div class="image" style="background-image: url(img/custom/bg/ai_2.jpeg);"></div>
-                        <div class="text text-center">
-                            <h3>AI & Image Processing</h3>
-                        </div>
-                    </div>
-
-                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
-                        <div class="image" style="background-image: url(img/custom/bg/ds_1.jpg);"></div>
-                        <div class="text text-center">
-                            <h3>Data Science</h3>
-                        </div>
-                    </div>
-
                 </div>
-
-                <div class="half">
-
-                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
-                        <div class="image" style="background-image: url(img/custom/bg/mobile_2.jpg);"></div>
-                        <div class="text text-center">
-                            <h3>모바일 앱 개발</h3>
-                        </div>
-                    </div>
-
-                    <div class="probootstrap-cell reverse probootstrap-animate" data-animate-effect="fadeIn">
-                        <div class="image" style="background-image: url(img/custom/bg/se_1.jpg);"></div>
-                        <div class="text text-center">
+                <div class="row">
+                    <div class="col-md-12 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-img" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/bg/se_1.jpg)">
                             <h3>Machine Learning</h3>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-img" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/bg/ai_2.jpeg)">
+                            <h3>AI & Image Processing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
-                        <div class="image" style="background-image: url(img/custom/bg/iot_1.jpg);"></div>
-                        <div class="text text-center">
+            <!-- Tech Stack Area -->
+            <div class="col-md-4 probootstrap-animate tile-layout-thumbnails">
+                <div class="row">
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/js.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/html5.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/css.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/jquery.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/react.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/angular.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/ts.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/php.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/node.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/express.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/java.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/cpp.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/flutter.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/python.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/ruby.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/go.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/mongo.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/oracle.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/mysql.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/cassandra.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/rubyrails.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/android.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/ios.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/windows.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/gcloud.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/aws.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/azure.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/scala.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/kafka.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/hadoop.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/pytorch.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/pandas.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/keras.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/tensorflow.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/elastic.png)"></div>
+                    </div>
+                    <div class="col-md-3 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-thumb" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/tech-logos/flask.png)"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Tech Stack Area -->
+
+            <div class="col-md-4 probootstrap-animate">
+                <div class="row">
+                    <div class="col-md-12 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-img" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/bg/mobile_2.jpg)">
+                            <h3>모바일 앱 개발</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-img" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/bg/iot_1.jpg)">
                             <h3>전자 & 하드웨어 개발</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 probootstrap-animate">
+                        <div class="probootstrap-animate tile tile-img" data-animate-effect="fadeIn"
+                             style="background-image: url(img/custom/bg/ds_1.jpg)">
+                            <h3>Data Science</h3>
                         </div>
                     </div>
                 </div>
@@ -182,21 +344,21 @@
     </div>
 </section>
 
-<section id="products" class="probootstrap-section-bg overlay" style="background-image: url(img/custom/bg/elec_2.jpg);"
+<section id="products" class="probootstrap-section-bg overlay"
+         style="background-image: url(img/custom/bg/mobile_3.png);"
          data-stellar-background-ratio="0.5" data-section="products">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center probootstrap-animate">
                 <div class="probootstrap-heading">
-                    <h2 class="primary-heading">발견하다</h2>
-                    <h3 class="secondary-heading">우리의 제품 & 서비스</h3>
+                    <h2 class="primary-heading">포트폴리오</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="probootstrap-section">
-    <div class="container">
+<section class="probootstrap-section probootstrap-cell-retro">
+    <!--<div class="container">
         <div class="row">
             <div class="probootstrap-cell-retro">
                 <div class="half">
@@ -237,11 +399,68 @@
                 </div>
             </div>
         </div>
+    </div>-->
+
+    <div class="container tile-layout products">
+        <div class="row">
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile tile-img frame" data-animate-effect="fadeIn">
+                    <img src="img/custom/product/snoofy.gif" alt="">
+                    <div class = "details">
+                        <h4>SNOOFY</h4>
+                        <p><b>Senses and indicates bad air quality</b></p>
+                        <p>모바일 앱 / Flutter / Atmel / ATmega 32</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile tile-img frame" data-animate-effect="fadeIn">
+                    <img src="img/custom/product/elec_1.jpg" alt="">
+                    <div class = "details">
+                        <h4>GYRO FISHING</h4>
+                        <p><b>---</b></p>
+                        <p>NRF52810 RF system</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile tile-img frame" data-animate-effect="fadeIn">
+                    <img src="img/custom/product/jewelry.png" alt="">
+                    <div class = "details">
+                        <h4>Jewelry Recognition</h4>
+                        <p><b>Recognising pieces of jewelry for product creation</b></p>
+                        <p>Image Processing / AI</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TODO: [Sajeewa] Remove col-lg-offset-2 after adding a new product -->
+            <div class="col-md-4 col-lg-offset-2 probootstrap-animate">
+                <div class="probootstrap-animate tile tile-img frame" data-animate-effect="fadeIn">
+                    <img src="img/custom/product/health-app.gif" alt="">
+                    <div class = "details">
+                        <h4>건강신호등</h4>
+                        <p><b>Intelligence tool for analysing health status and predicting diseases</b></p>
+                        <p>웹 앱 / React</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 probootstrap-animate">
+                <div class="probootstrap-animate tile tile-img frame" data-animate-effect="fadeIn">
+                    <img src="img/custom/product/balance-bio.gif" alt="">
+                    <div class = "details">
+                        <h4>밸런바이옴</h4>
+                        <p><b>Intelligence tool for analysing health status and predicting diseases</b></p>
+                        <p>웹 앱 / React</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-
-<section id="ceo" class="probootstrap-section-bg overlay" style="background-image: url(img/custom/bg/ceo_message.jpg);"
+<!-- TODO: [Sajeewa] Add the CEO's Message section when needed-->
+<!--<section id="ceo" class="probootstrap-section-bg overlay" style="background-image: url(img/custom/bg/ceo_message.jpg);"
          data-stellar-background-ratio="0.5" data-section="ceo">
     <div class="container">
         <div class="row">
@@ -286,7 +505,7 @@
 
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -367,19 +586,24 @@
 
                     <br>
                     <br>
-                    식빵 봉지를 연다 -> 식빵을 꺼낸다 -> 식빵을 그릇에 내려 놓는다 -> 잼 뚜껑을 연다 -> 잼을 한손으로 고정하고 잼을 바를 스푼 또는 칼을 든다. -> 스푼 또는 칼을 잼통에서 잼을 푼다 -> 그릇에 노여진 식빵에 스푼 또는 칼에 묻어있는 잼을 바른다. -> 잼이 묻지 않은 식빵을 잼이 묻은 식빵에 덮는다. -> 식빵을 들고 먹는다.
+                    식빵 봉지를 연다 -> 식빵을 꺼낸다 -> 식빵을 그릇에 내려 놓는다 -> 잼 뚜껑을 연다 -> 잼을 한손으로 고정하고 잼을 바를 스푼 또는 칼을 든다. -> 스푼 또는 칼을
+                    잼통에서 잼을 푼다 -> 그릇에 노여진 식빵에 스푼 또는 칼에 묻어있는 잼을 바른다. -> 잼이 묻지 않은 식빵을 잼이 묻은 식빵에 덮는다. -> 식빵을 들고 먹는다.
 
                     <br>
                     <br>
-                    위와 같이 일상 생활에서도 어떠한 것을 요청하면 고객-개발자의 입장과 결과가 달라짐을 볼 수 있습니다. 그리고 많은 고객님께서 많은 돈을 들여 고객님의 꿈을 현실화 하기 위해 개발 외주를 진행하고 만족하지 못한 결과와 소송에 더 많은 돈을 지불하고 있습니다.
+                    위와 같이 일상 생활에서도 어떠한 것을 요청하면 고객-개발자의 입장과 결과가 달라짐을 볼 수 있습니다. 그리고 많은 고객님께서 많은 돈을 들여 고객님의 꿈을 현실화 하기 위해 개발
+                    외주를 진행하고 만족하지 못한 결과와 소송에 더 많은 돈을 지불하고 있습니다.
 
                     <br>
                     <br>
-                    식빵 사례만으로도 고객님이 요청하는 것과 다른 과정과 결과를 만드는데 더 어려운 개발 외주를 진행하면서 얼마나 많은 과정과 결과가 고객님께서 의도하지 않은대로 만들어지고 개발 외주 사에서 고객님의 소중한 시간과 자산 그리고 꿈을 현실화 하지 못하도록 큰 실망감을 고객님께 안겨드렸을지 생각하면 마음이 너무 아픕니다.
+                    식빵 사례만으로도 고객님이 요청하는 것과 다른 과정과 결과를 만드는데 더 어려운 개발 외주를 진행하면서 얼마나 많은 과정과 결과가 고객님께서 의도하지 않은대로 만들어지고 개발 외주
+                    사에서 고객님의 소중한 시간과 자산 그리고 꿈을 현실화 하지 못하도록 큰 실망감을 고객님께 안겨드렸을지 생각하면 마음이 너무 아픕니다.
 
                     <br>
                     <br>
-                    뉴놉(NEWNOP)은 이런 문제를 개선하기 위해 모든 프로젝트를 PM경력과 품질관리 다년간 보유하고 있는 대표가 직접 컨트롤 합니다. 그리고 고객님의 Needs를 파악하고 Needs 속에 빠져있는 것들을 첨언하여 세계적으로 유능한 최고 개발자에게 고객님의 Project를 전달하고 관리하고 개발이 진행됩니다. 그리고 개발이 완료되면 한 Project당 700~1,000건의 불량을 잡아내는 품질관리 출신 대표가 bug를 잡고 더 완벽한 개발외주결과물을 고객님께 안겨드릴 것입니다.
+                    뉴놉(NEWNOP)은 이런 문제를 개선하기 위해 모든 프로젝트를 PM경력과 품질관리 다년간 보유하고 있는 대표가 직접 컨트롤 합니다. 그리고 고객님의 Needs를 파악하고
+                    Needs 속에 빠져있는 것들을 첨언하여 세계적으로 유능한 최고 개발자에게 고객님의 Project를 전달하고 관리하고 개발이 진행됩니다. 그리고 개발이 완료되면 한 Project당
+                    700~1,000건의 불량을 잡아내는 품질관리 출신 대표가 bug를 잡고 더 완벽한 개발외주결과물을 고객님께 안겨드릴 것입니다.
 
                     <br>
                     <br>
@@ -390,103 +614,123 @@
     </div>
 </div>
 
-<section id="contact" class="probootstrap-section probootstrap-bg-black no-pad" data-section="contact">
+<section id="contact" class="probootstrap-section no-pad probootstrap-bg-black" data-section="contact">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 probootstrap-animate contact-details">
-                <div class="probootstrap-heading dark text-center">
-                    <h1 class="primary-heading">연락하기</h1>
-                    <h3 class="secondary-heading">NEWNOP 팀</h3>
-                </div>
-
-                <p class="text-center">질문이 있으시면 직원이 항상 기꺼이 도와드리겠습니다. 부담없이 전화나 이메일로 연락 주시면 최대한 빨리 답변 드리겠습니다.</p>
-
-                <h4><b>사업자정보확인</b></h4>
-                <p><b>CEO:</b> 강성봉</p>
-                <p><b>사업자등록번호:</b> 685-46-00871</p>
-                <p><b>주소:</b> 경기도 용인시 기흥구 기흥역로</p>
-                <address>
-                    <p><b>전화 번호:</b><a href="tel:+82 10 8004 0520"> +82 10 8004 0520</a></p>
-                    <p><b>이메일:</b><a href="mailto:newnop@naver.com"> newnop@naver.com</a></p>
-                </address>
-
-                <div class="row">
-                    <div class="col-md-6">
-
+            <div class="col-md-7 probootstrap-animate">
+                <form method="post" class="probootstrap-form" action="https://formspree.io/f/mzboewzk" target="_blank">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="c_company">회사명</label>
+                                <div class="form-field">
+                                    <input name="company" type="text" id="c_company" class="form-control" placeholder="클라이언트님의 회사명을 입력해주세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="c_name">담당자</label>
+                                <div class="form-field">
+                                    <input name="name" type="text" id="c_name" class="form-control" placeholder="클라이언트님의 이름을 입력해주세요.">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
 
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="c_email">이메일</label>
+                                <div class="form-field">
+                                    <input name="email" type="text" id="c_email" class="form-control" placeholder="클라이언트님의 이메일을 입력해주세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="c_contact">연락처</label>
+                                <div class="form-field">
+                                    <input name="contact" type="text" id="c_contact" class="form-control" placeholder="클라이언트님의 연락처를 입력해주세요.">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-md-push-1 probootstrap-animate">
-                <form method="post" class="probootstrap-form" action="https://formspree.io/f/mpzolprv" target="_blank">
+
                     <div class="form-group">
-                        <label for="c_name">이름</label>
+                        <label for="message">메세지</label>
                         <div class="form-field">
-                            <input type="text" id="c_name" class="form-control">
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                      class="form-control" placeholder="클라이언트님의 요청사항을 입력해주세요."></textarea>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="c_email">이메일</label>
-                        <div class="form-field">
-                            <input type="text" id="c_email" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="c_message">메세지</label>
-                        <div class="form-field">
-                            <textarea name="c_message" id="c_message" cols="30" rows="10"
-                                      class="form-control"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" name="c_submit" id="c_submit" value="메시지 보내기"
+                        <input type="submit" name="submit" id="submit" value="메시지 보내기"
                                class="btn btn-primary btn-lg">
                     </div>
                 </form>
+            </div>
+
+            <div class="col-md-5 probootstrap-animate contact-details">
+                <div class="probootstrap-heading dark text-center">
+                    <h1 class="primary-heading">개발상담</h1>
+                </div>
+
+                <p class="text-center">
+                    클라이언트님의 Business를 Design 해드립니다.
+                    <br>
+                    뉴놉(NEWNOP)과 소중한 인연이 되어주세요.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="probootstrap-footer">
-    <div class="container">
+    <div class="container probootstrap-footer-widget">
         <div class="row">
-            <div class="col-md-6 probootstrap-animate">
-                <div class="probootstrap-footer-widget">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-6">
+                <div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <li><a href="#welcome" data-nav-section="welcome">회사 소개</a></li>
-                        </div>
-                        <div class="col-md-12">
-                            <li><a href="#businesses" data-nav-section="businesses">솔루션</a></li>
-                        </div>
-                        <div class="col-md-12">
-                            <li><a href="#products" data-nav-section="products">제품 & 서비스</a></li>
-                        </div>
-                        <div class="col-md-12">
-                            <li><a href="#ceo" data-nav-section="ceo">CEO의 메시지</a></li>
-                        </div>
-                        <div class="col-md-12">
-                            <li><a href="#contact" data-nav-section="contact">연락</a></li>
+                        <a class="" href="index.html" title="NEWNOP">
+                            <img src="img/custom/web/logo_white.png" alt="NEWNOP" class="mb10">
+                        </a>
+                    </div>
+                    <div class="row social-icons">
+                        <a href="https://open.kakao.com/me/newnop" target="_blank"><img src="img/custom/web/KakaoTalk_logo.svg" alt="" style="height: 30px; width: auto"></a>
+                        <a href="https://www.linkedin.com/company/newnop" target="_blank"><img src="img/custom/web/LinkedIn_logo.svg" alt="" style="height: 30px; width: auto"></a>
+                    </div>
+                    <div class="row bottom-nav mt15">
+                        <li><a href="#welcome" data-nav-section="welcome">회사 소개</a></li>
+                        <li><a href="#businesses" data-nav-section="businesses">솔루션</a></li>
+                        <li><a href="#products" data-nav-section="products">제품 & 서비스</a></li>
+                        <li><a href="#contact" data-nav-section="contact">연락</a></li>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 copyright-text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                <span class="green-fore-color"><b>NEWNOP</b></span>. All rights reserved.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<section class="probootstrap-copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="copyright-text">&copy; 저작권 &copy;<script>document.write(new Date().getFullYear());</script>
-                    모든 권리는 <b>NEWNOP</b>이 보유합니다.
-                </p>
+            <div class="col-md-4">
+                <h3 class="green-fore-color mt0"><b>뉴놉(NEWNOP)</b></h3>
+                <p><b>대표자:</b> 강성봉 (KANG, SungBong)</p>
+                <p><b>사업자:</b><span class="green-fore-color"> 685-46-00871</span></p>
+                <p><b>주소:</b> 경기도 용인시 기흥구 기흥역로 16, 23층</p>
+                <address>
+                    <p><b>전화번호:</b><a href="tel:+82 10 8004 0520"> +82 10 8004 0520</a></p>
+                    <p><b>이메일:</b><a href="mailto:ceo@newnop.com"> ceo@newnop.com</a></p>
+                </address>
             </div>
+
+            <div class="col-md-1"></div>
         </div>
     </div>
 </section>
