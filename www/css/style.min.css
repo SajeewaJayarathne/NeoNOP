@@ -2097,6 +2097,37 @@ section[data-section=menu] {
     width: fit-content;
 }
 
+.modal-content > .row {
+    height: calc(100% - 123px);
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        margin: 0;
+        width: 100%;
+    }
+
+    .modal .probootstrap-heading .primary-heading {
+        font-size: 30px;
+    }
+
+    .probootstrap-content h3 {
+        font-size: 22px;
+    }
+
+    .probootstrap-content h4 {
+        font-size: 16px;
+    }
+
+    .probootstrap-content p {
+        font-size: 12px;
+    }
+
+    .modal-content > .row {
+        height: calc(100% - 45px);
+    }
+}
+
 /* The Close Button */
 .close {
     color: #00b767;
