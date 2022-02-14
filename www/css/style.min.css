@@ -361,13 +361,13 @@ a:active, a:focus, a:hover {
 
 @media screen and (max-width: 768px) {
     .probootstrap-navbar .navbar-nav > li.active > a {
-        color: rgba(0, 0, 0, .7)
+        color: #59ffb5;
     }
 }
 
 .probootstrap-navbar .navbar-nav > li.active > a:active, .probootstrap-navbar .navbar-nav > li.active > a:focus, .probootstrap-navbar .navbar-nav > li.active > a:hover {
     background: 0 0;
-    color: #fff
+    color: #fff;
 }
 
 .probootstrap-navbar .navbar-nav > li > .dropdown-menu:before {
@@ -620,8 +620,7 @@ a:active, a:focus, a:hover {
 }
 
 .btn.btn-ghost:hover {
-    background: #59ffb5;
-    color: #fff
+    background: #363434;
 }
 
 .btn.btn-ghost:active, .btn.btn-ghost:focus {
@@ -768,7 +767,12 @@ section[data-section=menu] {
 }
 
 .probootstrap-footer .probootstrap-footer-widget {
-    margin-bottom: 0
+    margin-bottom: 0;
+}
+
+.probootstrap-footer .probootstrap-footer-widget .policy > ul {
+    margin: 70% 0 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -778,6 +782,27 @@ section[data-section=menu] {
 
     .probootstrap-footer .probootstrap-footer-widget {
         margin-bottom: 20px
+    }
+
+    .probootstrap-footer .row {
+        margin: auto;
+    }
+
+    .probootstrap-footer .probootstrap-footer-widget > div.row > div {
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+
+    .probootstrap-footer .probootstrap-footer-widget > div.row > div:last-child {
+        margin-bottom: 0;
+    }
+
+    .probootstrap-footer .probootstrap-footer-widget .policy > ul {
+        margin: 0;
+    }
+
+    .probootstrap-footer .probootstrap-footer-widget div.row.bottom-nav li {
+        padding: 0;
     }
 }
 
@@ -1647,7 +1672,7 @@ section[data-section=menu] {
 }
 
 .flexslider, .flexslider .slides > li, .slider-height {
-    height: 750px
+    height: 570px
 }
 
 .probootstrap-heading .primary-heading {
@@ -1696,17 +1721,18 @@ section[data-section=menu] {
     font-weight: 300
 }
 
-.probootstrap-content {
+.probootstrap-content * {
     font-family: NotoSansKR;
     color: #FFFFFF;
 }
 
-h4.probootstrap-content {
-    font-size: 30px;
+.probootstrap-content h4 {
+    font-size: 20px;
+    padding-top: 15px;
 }
 
-p.probootstrap-content {
-    font-size: 16px;
+.probootstrap-content p {
+    font-size: 15px;
     line-height: 25px;
 }
 
@@ -2026,6 +2052,12 @@ p.probootstrap-content {
     margin-bottom: 5px;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-details {
+        margin-bottom: 50px;
+    }
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -2048,7 +2080,7 @@ p.probootstrap-content {
 
 /* Modal Content */
 .modal-content {
-    background-color: #000000;
+    background-color: #363434;
     margin: auto;
     padding: 20px;
     border: 2px solid #59ffb5;
@@ -2255,12 +2287,14 @@ p.probootstrap-content {
 }
 
 .tile-layout .tile-layout-thumbnails .row {
-    padding: 0 15px;
+    /*padding: 0 15px;*/
+    text-align: center;
 }
 
 .tile-layout .tile-layout-thumbnails .row > div {
     padding: 0;
-    padding-bottom: 7px;
+    width: 86px;
+    display: inline-block;
 }
 
 .tile-layout .tile {
@@ -2273,7 +2307,6 @@ p.probootstrap-content {
 .tile-layout.products .tile {
     height: 270px;
     padding: 0;
-    background: transparent;
 }
 
 .tile-layout .tile h1 {
@@ -2312,6 +2345,7 @@ p.probootstrap-content {
     background-color: #000000;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0;
 }
 
 .frame {
@@ -2322,8 +2356,9 @@ p.probootstrap-content {
     display: flex;
     justify-content: center;
 }
+
 .frame img {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: auto;
     border-radius: 15px;
@@ -2359,11 +2394,59 @@ p.probootstrap-content {
 
 .frame .details p:last-child {
     margin-bottom: 0;
+    font-style: italic;
 }
 
 .frame:hover .details {
     transform: translate(-50%, -50%) rotateY(0deg);
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .tile-layout .tile-thumb {
+        height: 80px;
+    }
+
+    .tile-layout .tile-layout-thumbnails .row {
+        padding: 0 15px;
+    }
+
+    .tile-layout .tile-layout-thumbnails .row > div {
+        width: 78px;
+    }
+
+    .frame img {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tile-layout .tile p {
+        font-size: 14px;
+    }
+
+    .tile-layout .tile h3 {
+        font-size: 20px;
+    }
+
+    .tile-layout .tile-thumb {
+        height: 78px;
+    }
+
+    .tile-layout .tile-layout-thumbnails .row > div {
+        width: 74px;
+    }
+}
+
+.no-border-btn {
+    border: none;
+    background: none;
+    color: #59ffb5;
+    width: max-content;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* Colours */

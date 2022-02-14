@@ -17189,7 +17189,6 @@ a:hover, a:focus, a:active {
 
 .btn.btn-ghost:hover {
     background: #FFA33E;
-    color: #ffffff;
 }
 
 .btn.btn-ghost:focus, .btn.btn-ghost:active {
@@ -17304,7 +17303,8 @@ section[data-section="menu"] {
 }
 
 .probootstrap-footer .probootstrap-footer-widget div.row div li {
-    display: inline-block;
+    display: block;
+    margin-top: 5px;
 }
 
 .probootstrap-footer .probootstrap-footer-widget div.row div li a i {
