@@ -728,8 +728,14 @@ section[data-section=menu] {
     }
 
     .probootstrap-section-bg .probootstrap-heading.main-heading h2{
-        line-height: 6vh;
+        line-height: 5vh;
         font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .probootstrap-section-bg .probootstrap-heading.main-heading h2{
+        line-height: 4vh;
     }
 }
 
@@ -2433,6 +2439,12 @@ section[data-section=menu] {
     opacity: 1;
 }
 
+@media screen and (max-width: 991px) {
+    .frame img {
+        height: 90%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .tile-layout .tile-thumb {
         height: 80px;
@@ -2444,10 +2456,6 @@ section[data-section=menu] {
 
     .tile-layout .tile-layout-thumbnails .row > div {
         width: 78px;
-    }
-
-    .frame img {
-        height: 90%;
     }
 }
 
